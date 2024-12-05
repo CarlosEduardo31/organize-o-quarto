@@ -46,8 +46,8 @@ body {
   position: absolute;
   width: 100px;
   height: 100px;
-  border: 2px dashed #aaa; /* Apenas para visualização */
-  background-color: rgba(0, 255, 0, 0.2); /* Cor leve para identificação */
+   /*border: 2px dashed #aaa; Apenas para visualização */
+ /* background-color: rgba(0, 255, 0, 0.2);  Cor leve para identificação */
   z-index: 0;
 }
 
