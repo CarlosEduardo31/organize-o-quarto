@@ -75,6 +75,8 @@ function handleDrop(itemId) {
     posicaoCorreta.classList.add("completo");
     const itemElement = document.getElementById(itemId);
     posicaoCorreta.appendChild(itemElement); // Coloca o item na área correta
+     // Aplica a classe "grande" para aumentar o tamanho do item
+     itemElement.classList.add("grande");
   }
 
   // Verifica se já foram movidos 3 itens

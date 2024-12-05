@@ -44,10 +44,10 @@ body {
 /* Áreas de Soltar */
 .area-drop {
   position: absolute;
-  width: 100px;
-  height: 100px;
-   /*border: 2px dashed #aaa; Apenas para visualização */
- /* background-color: rgba(0, 255, 0, 0.2);  Cor leve para identificação */
+  /* width: 100px;
+  height: 100px; */
+  /*border: 2px dashed #aaa;  Apenas para visualização */
+  /*background-color: rgba(0, 255, 0, 0.2); Cor leve para identificação */
   z-index: 0;
 }
 
@@ -58,23 +58,23 @@ body {
 }
 
 #area-cadeira {
-  top: 455px;
-  left: 85px;
+  top: 206px;
+  left: -7px;
 }
 
 #area-modem {
-  top: 199px;
-  left: 476px;
+  top: 182px;
+  left: 508px;
 }
 
 #area-mochila {
-  top: 473px;
+  top: 462px;
   left: 536px;
 }
 
 #area-quadro {
   top: 21px;
-  left: 645px;
+  left: 595px;
 }
 
 
@@ -103,18 +103,6 @@ body {
   justify-content: center;
 }
 
-/* Itens */
-.item-drag {
-  width: 80px;
-  height: 80px;
-  line-height: 80px;
-  color: white;
-  text-align: center;
-  font-weight: bold;
-  cursor: grab;
-  border-radius: 8px;
-  margin: 10px;
-}
 
 .item {
   width: 100px;
@@ -130,10 +118,133 @@ body {
   text-align: center;
 }
 
+.item-notebook {
+  width: 100px;
+  height: 80px;
+  background-image: url('./imagem/notebook.png'); /* Imagem para o notebook */
+  background-size: cover;
+  /* border: 1px solid #ccc;
+  border-radius: 8px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: grab;
+  font-size: 14px;
+  text-align: center;
+}
+
+.item-cadeira {
+  width: 100px;
+  height: 80px;
+  background-image: url('./imagem/cadeira.png'); /* Imagem para o notebook */
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* border: 1px solid #ccc;
+  border-radius: 8px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: grab;
+  font-size: 14px;
+  text-align: center;
+}
+
+.item-modem {
+  width: 100px;
+  height: 80px;
+  background-image: url('./imagem/modem.png'); /* Imagem para o notebook */
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* border: 1px solid #ccc;
+  border-radius: 8px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: grab;
+  font-size: 14px;
+  text-align: center;
+}
+
+.item-quadro {
+  width: 100px;
+  height: 80px;
+  background-image: url('./imagem/quadro.png'); /* Imagem para o notebook */
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* border: 1px solid #ccc;
+  border-radius: 8px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: grab;
+  font-size: 14px;
+  text-align: center;
+}
+
+.item-mochila {
+  width: 100px;
+  height: 80px;
+  background-image: url('./imagem/mochila.png'); /* Imagem para o notebook */
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* border: 1px solid #ccc;
+  border-radius: 8px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: grab;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Tamanhos normais dos itens */
+.item-drag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 80px;
+  line-height: 80px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  cursor: grab;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+/* Tamanhos ao ser movido para a área correta */
+.item-notebook.grande {
+  width: 158px;
+  height: 119px;
+}
+
+.item-cadeira.grande {
+  width: 335px;
+  height: 349px;
+}
+
+.item-modem.grande {
+  width: 109px;
+  height: 110px;
+}
+
+.item-quadro.grande {
+  width: 173px;
+  height: 150px;
+}
+
+.item-mochila.grande {
+  width: 96px;
+  height: 128px;
+}
+
+
 .item.disabled {
   pointer-events: none;
   opacity: 0.5; /* Torna os itens desativados visivelmente diferentes */
 }
+
 
 #mensagem {
   margin-top: 20px;
