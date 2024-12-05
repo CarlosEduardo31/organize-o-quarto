@@ -1,0 +1,142 @@
+/* Configuração geral */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+#jogo {
+  max-width: 800px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Quarto */
+
+ /* #quarto {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+  background-color: #e0e0e0; 
+  overflow: hidden;
+}  */
+
+
+
+#quarto {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+  background: url('quarto2.jpeg') no-repeat center/cover;
+  overflow: hidden;
+}
+
+
+/* Áreas de Soltar */
+.area-drop {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 2px dashed #aaa; /* Apenas para visualização */
+  background-color: rgba(0, 255, 0, 0.2); /* Cor leve para identificação */
+  z-index: 0;
+}
+
+/* Posicionamento das áreas */
+#area-notebook {
+  top: 141px;
+  left: 268px;
+}
+
+#area-cadeira {
+  top: 455px;
+  left: 85px;
+}
+
+#area-modem {
+  top: 199px;
+  left: 476px;
+}
+
+#area-mochila {
+  top: 473px;
+  left: 536px;
+}
+
+#area-quadro {
+  top: 21px;
+  left: 645px;
+}
+
+
+#imagem-fundo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.posicao {
+  background: #f0f0f0;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  min-height: 80px;
+  position: relative;
+}
+
+#itens {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Itens */
+.item-drag {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  cursor: grab;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.item {
+  width: 100px;
+  height: 40px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: grab;
+  font-size: 14px;
+  text-align: center;
+}
+
+.item.disabled {
+  pointer-events: none;
+  opacity: 0.5; /* Torna os itens desativados visivelmente diferentes */
+}
+
+#mensagem {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}

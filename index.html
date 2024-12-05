@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrume o Quarto!</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="jogo">
+    <!-- <h1>Arrume o Quarto!</h1> -->
+    <p>Mova os itens necessários para acessar a internet, mas escolha com cuidado! Você só pode mover 3 itens.</p>
+    <div id="quarto">
+      <div id="areas">
+        <div id="area-notebook" class="area-drop"></div>
+        <div id="area-cadeira" class="area-drop"></div>
+        <div id="area-modem" class="area-drop"></div>
+        <div id="area-mochila" class="area-drop"></div>
+        <div id="area-quadro" class="area-drop"></div>
+      </div>
+    </div>
+    <div id="itens">
+      <div id="notebook" class="item-drag" draggable="true" style="background-color: green;">Notebook</div>
+      <div id="cadeira" class="item-drag" draggable="true" style="background-color: blue;">Cadeira</div>
+      <div id="modem" class="item-drag" draggable="true" style="background-color: orange;">Modem</div>
+      <div id="mochila" class="item-drag" draggable="true" style="background-color: purple;">Mochila</div>
+      <div id="quadro" class="item-drag" draggable="true" style="background-color: red;">Quadro</div>
+    </div>
+    <div id="mensagem"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
