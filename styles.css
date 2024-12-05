@@ -36,7 +36,7 @@ body {
   width: 800px;
   height: 600px;
   margin: 0 auto;
-  background: url('quarto2.jpeg') no-repeat center/cover;
+  background: url('./imagem/quarto2.jpeg') no-repeat center/cover;
   overflow: hidden;
 }
 
