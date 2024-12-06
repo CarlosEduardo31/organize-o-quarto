@@ -57,11 +57,7 @@ quarto.addEventListener("drop", (event) => {
 
 // Função para tratar o drop e mover o item automaticamente para a posição correta
 function handleDrop(itemId) {
-  // if (tentativas >= 3) {
-  //   mensagem.textContent = "Você já moveu 3 itens nesta tentativa!";
-  //   return;
-  // }
-
+  
   // Adiciona o item à lista de itens movidos e atualiza a contagem
   if (!itensMovidos.includes(itemId)) {
     itensMovidos.push(itemId);
@@ -74,6 +70,8 @@ function handleDrop(itemId) {
     posicaoCorreta.textContent = ""; // Limpa a área de destino
     posicaoCorreta.classList.add("completo");
     const itemElement = document.getElementById(itemId);
+    const cardItem = itemElement.parentElement;
+    cardItem.classList.add("hidden")
     posicaoCorreta.appendChild(itemElement); // Coloca o item na área correta
      // Aplica a classe "grande" para aumentar o tamanho do item
      itemElement.classList.add("grande");
