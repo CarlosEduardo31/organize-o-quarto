@@ -210,10 +210,6 @@ body {
   align-items: center;
   width: 100px;
   height: 80px;
-  line-height: 80px;
-  color: white;
-  text-align: center;
-  font-weight: bold;
   cursor: grab;
   border-radius: 8px;
   margin: 10px;
@@ -319,6 +315,11 @@ body {
     height: 101px;
   }
 
+  .item-drag {
+    width: 82px;
+    height: 62px;
+  }
+
 
 }
 
@@ -383,6 +384,11 @@ body {
   .item-mochila.grande {
     width: 76px;
     height: 72px;
+  }
+
+  .item-drag {
+    width: 82px;
+    height: 62px;
   }
 
 }
