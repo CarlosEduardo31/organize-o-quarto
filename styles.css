@@ -20,7 +20,7 @@ body {
 
 /* Quarto */
 
- /* #quarto {
+/* #quarto {
   position: relative;
   width: 800px;
   height: 600px;
@@ -103,6 +103,13 @@ body {
   justify-content: center;
 }
 
+.card-item {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .card-item.hidden span {
   visibility: hidden;
   display: none;
@@ -127,8 +134,10 @@ body {
 .item-notebook {
   width: 100px;
   height: 80px;
-  background-image: url('./imagem/notebook.png'); /* Imagem para o notebook */
-  background-size: cover;
+  background-image: url('./imagem/notebook.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   /* border: 1px solid #ccc;
   border-radius: 8px; */
   display: flex;
@@ -142,8 +151,9 @@ body {
 .item-cadeira {
   width: 100px;
   height: 80px;
-  background-image: url('./imagem/cadeira.png'); /* Imagem para o notebook */
+  background-image: url('./imagem/cadeira.png');
   background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   /* border: 1px solid #ccc;
   border-radius: 8px; */
@@ -158,8 +168,9 @@ body {
 .item-modem {
   width: 100px;
   height: 80px;
-  background-image: url('./imagem/modem.png'); /* Imagem para o notebook */
+  background-image: url('./imagem/modem.png');
   background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   /* border: 1px solid #ccc;
   border-radius: 8px; */
@@ -174,8 +185,9 @@ body {
 .item-quadro {
   width: 100px;
   height: 80px;
-  background-image: url('./imagem/quadro.png'); /* Imagem para o notebook */
+  background-image: url('./imagem/quadro.png');
   background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   /* border: 1px solid #ccc;
   border-radius: 8px; */
@@ -190,8 +202,9 @@ body {
 .item-mochila {
   width: 100px;
   height: 80px;
-  background-image: url('./imagem/mochila2.png'); /* Imagem para o notebook */
+  background-image: url('./imagem/mochila2.png');
   background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   /* border: 1px solid #ccc;
   border-radius: 8px; */
@@ -244,7 +257,8 @@ body {
 
 .item.disabled {
   pointer-events: none;
-  opacity: 0.5; /* Torna os itens desativados visivelmente diferentes */
+  opacity: 0.5;
+  /* Torna os itens desativados visivelmente diferentes */
 }
 
 
@@ -256,11 +270,11 @@ body {
 
 @media screen and (max-width: 768px) {
 
-  #jogo{
+  #jogo {
     width: 100%;
   }
 
-  #quarto{
+  #quarto {
     width: 100%;
     height: 487px;
   }
@@ -298,7 +312,7 @@ body {
   #area-quadro {
     top: 7px;
     left: 483px;
-  } 
+  }
 
   .item-quadro.grande {
     width: 123px;
@@ -328,11 +342,11 @@ body {
 
 @media screen and (max-width: 480px) {
 
-  #jogo{
+  #jogo {
     width: 100%;
   }
 
-  #quarto{
+  #quarto {
     width: 100%;
   }
 
@@ -369,7 +383,7 @@ body {
   #area-quadro {
     top: 12px;
     left: 237px;
-  } 
+  }
 
   .item-quadro.grande {
     width: 90px;
